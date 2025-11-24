@@ -28,13 +28,13 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 75%;
             background-color: var(--primary-color);
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 9999;
-            animation: fadeOut 2s ease-in-out 3s forwards;
+            animation: fadeOut 4s ease-in-out 3s forwards;
         }
         .splash-logo {
             width: 100%;
@@ -345,11 +345,11 @@
             // Hide main content initially
             mainContent.style.display = 'none';
 
-            // After splash animation (5s total: 3s delay + 2s fade)
+            // After splash animation (7s total: 3s delay + 4s fade)
             setTimeout(() => {
                 splash.style.display = 'none';
                 mainContent.style.display = 'block';
-            }, 5000);
+            }, 7000);
         });
 
         function showSection(sectionId) {
